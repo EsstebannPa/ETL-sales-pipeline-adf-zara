@@ -14,7 +14,7 @@ Esto representa una situación común en empresas de retail, donde los datos de 
 | ------ | ------ |
 | `Azure Data Factory (ADF)` | Orquestación del pipeline y transformación de datos |
 | `Azure Blob Storage` | Almacenamiento de datos en zonas _raw_ y _clean_ |
-| `Python 3.13 (Pandas)` | Análisis exploratorio inicial del dataset |
+| `Python 3.13 (Pandas, Matplotlib)` | Análisis exploratorio inicial del dataset |
 | [Draw.io](https://www.drawio.com/) | Diseño del diagrama de arquitectura |
 
 #
@@ -30,27 +30,33 @@ Esto representa una situación común en empresas de retail, donde los datos de 
 3. 📏 El pipeline transforma y agrega una nueva columna derivada llamada `revenue` (ganancia).
 4. 📦 Se guarda un nuevo archivo en `ds-clean-data` y posteriormente en `clean-zone`, (Azure Blob), ahora limpio y listo para su análisis.
 
-##  Estructura del proyecto 📚
+##  Estructura del proyecto 📐
 #
 ```## Estructura del Proyecto
 ➡ ETL-sales-pipeline-adf-zara
-    * architecture/
-        * ArchivosReadme.md
-    * azure/
-        * logs/
-            - ResultadosDeEjecución.txt
     * data/
         * raw/
             - zara_sales_june.csv
         * clean/
+            - .gitkeep
     * documentation/
-        * Documentación del proyecto
         * screenshots/
-            - CapturasDePantalla.png
+            - *.png
+        * dataflow_description.md
+        * pipeline_description.md
+    * eda/
+        * eda_zara_sales.py
+    * .gitignore
     * README.md
-    * requirements.md
 ```
 
+##  Documentación del proyecto 📚
+
+- [Documentación Pipeline](documentation/pipeline_description.md)
+- [Documentación Dataflow](documentation/dataflow_description.md)
+  
+#
+#
 # Reflexión final 🤔
 
 A través del proyecto, mi capacidad de entendimiento y anáisis del mundo automatizado de los Pipelines, aumentó en gran medida, aprendí a relizar una creación completa de un Pipeline ETL en Azure Data Factory, conociendo cada paso, cada conexión y lo más importante, el propósito general y de cada uno de ellos. Aprendi también la configuración básica de una cuenta de almacenamiento y sus contenedores con el servicio Azure Blob Storage, como también, la documentación clara de todo el proyecto. 
