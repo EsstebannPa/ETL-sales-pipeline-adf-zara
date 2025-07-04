@@ -13,32 +13,27 @@ source1 → columnstransform1 → addcolumn → sink1
 ```
 
 ## source1 📂
-- Gracias a la actividad Source, se realiza la recolección de datos del contenedor `raw-zone` de Azure Blob Storage
+- Gracias a la actividad `Source`, se realiza la recolección de datos del contenedor `raw-zone` de Azure Blob Storage
 
-![Configuración de source1]()
-![Configuración de source1]()
-![Configuración de source1]()
+![Configuración de source1](screenshots/f.png)
 
 ## `columnstransform1` ✔
-- Gracias a la actividad Selection, se realiza la transformación de columnas, tipificando uniformemente el nombre de las mismas- 
+- Gracias a la actividad `Select`, se realiza la transformación de columnas, tipificando uniformemente el nombre de las mismas- 
 
-![Configuración de columnstransform1]()
-![Configuración de columnstransform1]()
-![Configuración de columnstransform1]()
+![Configuración de columnstransform1](screenshots/f1.png)
+
 
 ## `addcolumn` ♻
-- Gracias a la actividad Column Derivated, se realiza la cración y el cálculo de la nueva columna derivada de `price` y `sales_volume`
+- Gracias a la actividad `Derived Column`, se realiza la cración y el cálculo de la nueva columna derivada de `price` y `sales_volume`
 
-![Configuración de addcolumn]()
-![Configuración de addcolumn]()
-![Configuración de addcolumn]()
+![Configuración de addcolumn](screenshots/f2.png)
+![Configuración de addcolumn - generador de expresiones ](screenshots/f3.png)
 
 ## sink1 📦
-- Gracias a la actividad Sink, se realiza la configuración para recibir y almacenar esta nueva información ahora mas limpia y con mas potencial de información. 
+- Gracias a la actividad `Sink`, se realiza la configuración para recibir y almacenar esta nueva información ahora mas limpia y con mas potencial de información. 
 
-![Configuración de sink1]()
-![Configuración de sink1]()
-![Configuración de sink1]()
+![Configuración de sink1](screenshots/f4.png)
+![Configuración de sink1](screenshots/f4.1.png)
 
 #
 #
