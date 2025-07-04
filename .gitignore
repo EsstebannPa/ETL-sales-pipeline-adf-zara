@@ -1,0 +1,24 @@
+# SO Files
+.DS_Store
+Thumbs.db
+
+# Entornos Python/Jupyter
+__pycache__/
+*.pyc
+*.ipynb_checkpoints/
+.env
+.venv/
+*.egg-info/
+
+# Configuración local
+.vscode/
+.idea/
+*.code-workspace
+
+# No usables de diagramación
+*.drawio.bak
+*.bak
+
+# Adicionales
+*.azureconfig
+*.json
