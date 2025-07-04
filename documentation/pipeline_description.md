@@ -80,8 +80,8 @@ En la sección de `Autor`, se selecciona la opción de crear un nuevo Dataset a 
 
 ## 4.Creación de Flujo de datos
 
-[Leer documentación completa de Flujo de datos ADF](ruta/al/otro/archivo.md)
-![Configuración de Datasets en ADF Studio](screenshots/p15.png)
+[Leer documentación completa de Flujo de datos ADF](dataflow_description.md)
+![Configuración de Datasets en ADF Studio](screenshots/p-f.png)
 
 ## 5.Creación de Pipeline o Canalizador
 
